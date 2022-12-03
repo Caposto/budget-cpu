@@ -256,13 +256,13 @@
       <a name="font" val="SansSerif bold 12"/>
       <a name="text" val="LDR/STR, I[2:5] turn into imm4 address in memory"/>
     </comp>
-    <comp lib="8" loc="(365,135)" name="Text">
-      <a name="font" val="SansSerif bold 14"/>
-      <a name="text" val="53: 01010011 =&gt; R3 = R0 - R1"/>
-    </comp>
-    <comp lib="8" loc="(370,115)" name="Text">
+    <comp lib="8" loc="(369,116)" name="Text">
       <a name="font" val="SansSerif bold 14"/>
       <a name="text" val="6: 00000110 =&gt; R2 = R1 + R0"/>
+    </comp>
+    <comp lib="8" loc="(371,134)" name="Text">
+      <a name="font" val="SansSerif bold 14"/>
+      <a name="text" val="53: 01010011 =&gt; R3 = R0 - R1"/>
     </comp>
     <comp lib="8" loc="(520,280)" name="Text">
       <a name="color" val="#0000ff"/>
@@ -280,7 +280,7 @@
       <a name="color" val="#0000ff"/>
       <a name="text" val="Write Back(WB)"/>
     </comp>
-    <comp lib="8" loc="(680,175)" name="Text">
+    <comp lib="8" loc="(680,179)" name="Text">
       <a name="color" val="#0000ff"/>
       <a name="text" val="Instruction Decoding"/>
     </comp>
