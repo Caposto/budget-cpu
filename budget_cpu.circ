@@ -181,17 +181,17 @@
     <comp lib="4" loc="(410,300)" name="RAM">
       <a name="appearance" val="logisim_evolution"/>
     </comp>
-    <comp lib="8" loc="(100,110)" name="Text">
-      <a name="font" val="SansSerif bold 12"/>
-      <a name="text" val="I[2:3]: ReadReg1"/>
-    </comp>
     <comp lib="8" loc="(100,80)" name="Text">
       <a name="font" val="SansSerif bold 12"/>
       <a name="text" val="I[6:7]: Operation"/>
     </comp>
-    <comp lib="8" loc="(105,135)" name="Text">
+    <comp lib="8" loc="(101,127)" name="Text">
       <a name="font" val="SansSerif bold 12"/>
-      <a name="text" val="I[0] is rightmost bit"/>
+      <a name="text" val="I[4:5] ReadReg2"/>
+    </comp>
+    <comp lib="8" loc="(103,112)" name="Text">
+      <a name="font" val="SansSerif bold 12"/>
+      <a name="text" val="I[2:3]: ReadReg1"/>
     </comp>
     <comp lib="8" loc="(1087,1142)" name="Text">
       <a name="font" val="SansSerif bold 14"/>
@@ -200,6 +200,10 @@
     <comp lib="8" loc="(1088,1120)" name="Text">
       <a name="font" val="SansSerif bold 14"/>
       <a name="text" val="Store register 2 data in memory address 3: 11001101 = cd"/>
+    </comp>
+    <comp lib="8" loc="(109,143)" name="Text">
+      <a name="font" val="SansSerif bold 12"/>
+      <a name="text" val="I[0] is rightmost bit"/>
     </comp>
     <comp lib="8" loc="(1103,1078)" name="Text">
       <a name="font" val="SansSerif bold 14"/>
@@ -248,7 +252,7 @@
       <a name="color" val="#0000ff"/>
       <a name="text" val="ALU"/>
     </comp>
-    <comp lib="8" loc="(190,155)" name="Text">
+    <comp lib="8" loc="(189,159)" name="Text">
       <a name="font" val="SansSerif bold 12"/>
       <a name="text" val="LDR/STR, I[2:5] turn into imm4 address in memory"/>
     </comp>
@@ -307,10 +311,6 @@
     <comp lib="8" loc="(940,95)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="10: LDR"/>
-    </comp>
-    <comp lib="8" loc="(95,125)" name="Text">
-      <a name="font" val="SansSerif bold 12"/>
-      <a name="text" val="I[4:5] ReadReg2"/>
     </comp>
     <comp lib="8" loc="(950,60)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
