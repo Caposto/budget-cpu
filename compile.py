@@ -9,14 +9,15 @@ def read_assembly():
             # Use list indexing to divide
             instructions = assembly[0:i]
             data = assembly[i+1:len(assembly)]
-    print(instructions)
-    print(data)
 
     # Decode each instruction to hexadecimal values
     for i, inst in enumerate(instructions):
         instructions[i] = compile_ins(inst)
 
+    # Decoded each data assignment to hexadecimal values
+    
     print(instructions)
+    print(data)
 
     # index 0 holds all the assembly instructions, index 1 holds all the data assignments
     return [instructions, data]
@@ -57,6 +58,16 @@ def compile_ins(i):
 
     return format(int(binary_str, 2), '02x') # Convert binary to hexadecimal
 
+def compile_data(d):
+    """Converts assembly data assignment into tuple pairs (memory index, data value in hex)"""
+    if len(d) == 5:
+        memory_add = int(d[1])
+        value = format(int(d[4]), '02x')
+    else:
+        memory_add = int(d[1:3])
+        value = format(int(d[4:6]), '02x')
+    return(memory_add, value)
+
 def create_ins_img(instructions):
     """Takes an array of instructions and outputs image file (one for instruction_mem and one for data_mem)"""
     f = open("test_i.txt", "w")
@@ -78,3 +89,6 @@ if __name__ == "__main__":
 
     compile_ins('ADD R2 R1 R0')
     compile_ins('SUB R3 R0 R1')
+
+    compile_data('M0: 4')
+    compile_data('M12: 3')
