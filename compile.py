@@ -12,15 +12,20 @@ def read_assembly():
     print(instructions)
     print(data)
 
-    #for i, inst in enumerate(instructions):
-    #    instructions[i] = compile_ins(inst)
+    # Decode each instruction to hexadecimal values
+    for i, inst in enumerate(instructions):
+        instructions[i] = compile_ins(inst)
+
+    print(instructions)
 
     # index 0 holds all the assembly instructions, index 1 holds all the data assignments
     return [instructions, data]
 
 def compile_ins(i):
+    """Converts assembly instruction into hex code"""
     binary_str = ""
 
+    # LDR decoding
     if i[0:3].lower() == "ldr":
         binary_str += ("10")
 
@@ -34,12 +39,23 @@ def compile_ins(i):
         # Decode destination register
         binary_str += format(int(i[5]), '02b')
 
-    elif i[0:3].lower() == "add":
-        binary_str += ("00")
-    elif i[0:3].lower() == "sub":
-        binary_str += ("01")
+    # Arithmetic decoding
+    elif (i[0:3].lower() == "add" or i[0:3].lower() == "sub"):
+        if (i[0:3].lower() == "add"):
+            binary_str += "00"
+        elif(i[0:3].lower() == "sub"):
+            binary_str += "01"
 
-    print(binary_str)
+        # Decode ReadReg2
+        binary_str += format(int(i[11]), '02b')
+
+        # Decode ReadReg1
+        binary_str += format(int(i[8]), '02b')
+
+        # Decode Destination Register
+        binary_str += format(int(i[5]), '02b')
+
+    return format(int(binary_str, 2), '02x') # Convert binary to hexadecimal
 
 def create_ins_img(instructions):
     """Takes an array of instructions and outputs image file (one for instruction_mem and one for data_mem)"""
@@ -60,5 +76,5 @@ if __name__ == "__main__":
     create_ins_img(program[0])
     create_data_img(program[1])
 
-    compile_ins('LDR R0 M0')
-    compile_ins('LDR R1 M1')
+    compile_ins('ADD R2 R1 R0')
+    compile_ins('SUB R3 R0 R1')
