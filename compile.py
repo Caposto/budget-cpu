@@ -15,12 +15,16 @@ def read_assembly():
         instructions[i] = compile_ins(inst)
 
     # Decoded each data assignment to hexadecimal values
+    data_assignment = ['00'] * 16
+    for i, da in enumerate(data):
+        data[i] = compile_data(da)
+        data_assignment[data[i][0]] = data[i][1]
     
     print(instructions)
-    print(data)
+    print(data_assignment)
 
     # index 0 holds all the assembly instructions, index 1 holds all the data assignments
-    return [instructions, data]
+    return [instructions, data_assignment]
 
 def compile_ins(i):
     """Converts assembly instruction into hex code"""
@@ -76,10 +80,12 @@ def create_ins_img(instructions):
 
 def create_data_img(data):
     """Takes an array of memory assignments and outputs image file"""
-
-
-    f = open("test_d.txt", "w")
+    f = open("data_mem.txt", "w")
     f.write("v3.0 hex words addressed\n")
+    f.write("0: ")
+    for d in data:
+        f.write(d + " ")
+    f.write("\n")
     f.close()
 
 if __name__ == "__main__":
