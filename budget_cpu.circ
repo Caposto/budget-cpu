@@ -93,10 +93,6 @@
     <comp lib="0" loc="(330,320)" name="Constant">
       <a name="value" val="0x0"/>
     </comp>
-    <comp lib="0" loc="(400,80)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="width" val="8"/>
-    </comp>
     <comp lib="0" loc="(670,390)" name="Splitter">
       <a name="fanout" val="8"/>
       <a name="incoming" val="8"/>
@@ -181,45 +177,13 @@
     <comp lib="4" loc="(410,300)" name="RAM">
       <a name="appearance" val="logisim_evolution"/>
     </comp>
-    <comp lib="8" loc="(100,80)" name="Text">
-      <a name="font" val="SansSerif bold 12"/>
-      <a name="text" val="I[6:7]: Operation"/>
-    </comp>
-    <comp lib="8" loc="(101,127)" name="Text">
-      <a name="font" val="SansSerif bold 12"/>
-      <a name="text" val="I[4:5] ReadReg2"/>
-    </comp>
-    <comp lib="8" loc="(103,112)" name="Text">
-      <a name="font" val="SansSerif bold 12"/>
-      <a name="text" val="I[2:3]: ReadReg1"/>
-    </comp>
-    <comp lib="8" loc="(1087,1142)" name="Text">
-      <a name="font" val="SansSerif bold 14"/>
-      <a name="text" val="Store register 3 data in memory address 5: 11010111 = d7"/>
-    </comp>
-    <comp lib="8" loc="(1088,1120)" name="Text">
-      <a name="font" val="SansSerif bold 14"/>
-      <a name="text" val="Store register 2 data in memory address 3: 11001101 = cd"/>
-    </comp>
-    <comp lib="8" loc="(109,143)" name="Text">
-      <a name="font" val="SansSerif bold 12"/>
-      <a name="text" val="I[0] is rightmost bit"/>
-    </comp>
-    <comp lib="8" loc="(1103,1078)" name="Text">
-      <a name="font" val="SansSerif bold 14"/>
-      <a name="text" val="Load 4 into register 0 from Memory Addresss 0: 10000000 = 80"/>
-    </comp>
-    <comp lib="8" loc="(1103,1099)" name="Text">
-      <a name="font" val="SansSerif bold 14"/>
-      <a name="text" val="Load 3 into register 1 from Memory Addresss 1: 10000101 = 85"/>
+    <comp lib="8" loc="(124,109)" name="Text">
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="text" val="CPU Name: Budget CPU"/>
     </comp>
     <comp lib="8" loc="(1255,425)" name="Text">
       <a name="color" val="#0000ff"/>
       <a name="text" val="ReadReg1"/>
-    </comp>
-    <comp lib="8" loc="(130,95)" name="Text">
-      <a name="font" val="SansSerif bold 12"/>
-      <a name="text" val="I[0:1] : Desination Register"/>
     </comp>
     <comp lib="8" loc="(1320,825)" name="Text">
       <a name="color" val="#0000ff"/>
@@ -233,63 +197,48 @@
       <a name="color" val="#0000ff"/>
       <a name="text" val="RegData2"/>
     </comp>
-    <comp lib="8" loc="(1445,230)" name="Text">
-      <a name="font" val="SansSerif bold 12"/>
-      <a name="text" val="Use if I[6] = 1"/>
-    </comp>
     <comp lib="8" loc="(1480,315)" name="Text">
       <a name="color" val="#0000ff"/>
       <a name="text" val="imm4"/>
     </comp>
-    <comp lib="8" loc="(150,50)" name="Text">
-      <a name="text" val="8 Bit Instructions (I)"/>
-    </comp>
-    <comp lib="8" loc="(1591,1108)" name="Text">
-      <a name="font" val="SansSerif bold 12"/>
-      <a name="text" val="End Program: 11111111 (ff)"/>
+    <comp lib="8" loc="(156,51)" name="Text">
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="text" val="Christian Apostol, Marcus San Antonio"/>
     </comp>
     <comp lib="8" loc="(1790,640)" name="Text">
       <a name="color" val="#0000ff"/>
       <a name="text" val="ALU"/>
     </comp>
-    <comp lib="8" loc="(189,159)" name="Text">
-      <a name="font" val="SansSerif bold 12"/>
-      <a name="text" val="LDR/STR, I[2:5] turn into imm4 address in memory"/>
+    <comp lib="8" loc="(1820,585)" name="Text">
+      <a name="color" val="#8e00ff"/>
+      <a name="text" val="Execution (EX)"/>
     </comp>
-    <comp lib="8" loc="(369,116)" name="Text">
-      <a name="font" val="SansSerif bold 14"/>
-      <a name="text" val="6: 00000110 =&gt; R2 = R1 + R0"/>
+    <comp lib="8" loc="(239,80)" name="Text">
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="text" val="I pledge my honor that I have abided by the Stevens Honor System."/>
     </comp>
-    <comp lib="8" loc="(371,134)" name="Text">
-      <a name="font" val="SansSerif bold 14"/>
-      <a name="text" val="53: 01010011 =&gt; R3 = R0 - R1"/>
+    <comp lib="8" loc="(376,258)" name="Text">
+      <a name="color" val="#8e00ff"/>
+      <a name="text" val="Instruction Fetching (IF)"/>
+    </comp>
+    <comp lib="8" loc="(495,938)" name="Text">
+      <a name="color" val="#0000ff"/>
+      <a name="text" val="Data Memory"/>
     </comp>
     <comp lib="8" loc="(520,280)" name="Text">
       <a name="color" val="#0000ff"/>
       <a name="text" val="Instruction Memory"/>
     </comp>
-    <comp lib="8" loc="(550,30)" name="Text">
-      <a name="font" val="SansSerif plain 12"/>
-      <a name="text" val="Christian Apostol"/>
-    </comp>
-    <comp lib="8" loc="(570,90)" name="Text">
-      <a name="font" val="SansSerif plain 12"/>
-      <a name="text" val="CPU Name: Budget CPU"/>
-    </comp>
     <comp lib="8" loc="(640,755)" name="Text">
-      <a name="color" val="#0000ff"/>
-      <a name="text" val="Write Back(WB)"/>
+      <a name="color" val="#b100ff"/>
+      <a name="text" val="Write Back (WB)"/>
     </comp>
     <comp lib="8" loc="(680,179)" name="Text">
-      <a name="color" val="#0000ff"/>
-      <a name="text" val="Instruction Decoding"/>
-    </comp>
-    <comp lib="8" loc="(680,60)" name="Text">
-      <a name="font" val="SansSerif plain 12"/>
-      <a name="text" val="I pledge my honor that I have abided by the Stevens Honor System."/>
+      <a name="color" val="#8e00ff"/>
+      <a name="text" val="Instruction Decoding (ID)"/>
     </comp>
     <comp lib="8" loc="(720,1110)" name="Text">
-      <a name="color" val="#0000ff"/>
+      <a name="color" val="#bb00ff"/>
       <a name="text" val="Memory Access (ME)"/>
     </comp>
     <comp lib="8" loc="(755,220)" name="Text">
@@ -299,456 +248,6 @@
     <comp lib="8" loc="(810,885)" name="Text">
       <a name="color" val="#0000ff"/>
       <a name="text" val="RegWrite"/>
-    </comp>
-    <comp lib="8" loc="(930,40)" name="Text">
-      <a name="font" val="SansSerif plain 12"/>
-      <a name="text" val="I[6:7]"/>
-    </comp>
-    <comp lib="8" loc="(940,115)" name="Text">
-      <a name="font" val="SansSerif plain 12"/>
-      <a name="text" val="11: STR"/>
-    </comp>
-    <comp lib="8" loc="(940,95)" name="Text">
-      <a name="font" val="SansSerif plain 12"/>
-      <a name="text" val="10: LDR"/>
-    </comp>
-    <comp lib="8" loc="(950,60)" name="Text">
-      <a name="font" val="SansSerif plain 12"/>
-      <a name="text" val="00: Addition"/>
-    </comp>
-    <comp lib="8" loc="(960,80)" name="Text">
-      <a name="font" val="SansSerif plain 12"/>
-      <a name="text" val="01: Subtraction"/>
-    </comp>
-    <wire from="(1030,450)" to="(1030,570)"/>
-    <wire from="(1030,450)" to="(1050,450)"/>
-    <wire from="(1030,570)" to="(1030,700)"/>
-    <wire from="(1030,570)" to="(1050,570)"/>
-    <wire from="(1030,700)" to="(1030,830)"/>
-    <wire from="(1030,700)" to="(1050,700)"/>
-    <wire from="(1030,830)" to="(1030,870)"/>
-    <wire from="(1030,830)" to="(1050,830)"/>
-    <wire from="(1080,460)" to="(1130,460)"/>
-    <wire from="(1080,580)" to="(1130,580)"/>
-    <wire from="(1080,710)" to="(1130,710)"/>
-    <wire from="(1080,840)" to="(1130,840)"/>
-    <wire from="(1090,480)" to="(1090,520)"/>
-    <wire from="(1090,480)" to="(1130,480)"/>
-    <wire from="(1090,520)" to="(1090,600)"/>
-    <wire from="(1090,600)" to="(1090,730)"/>
-    <wire from="(1090,600)" to="(1130,600)"/>
-    <wire from="(1090,730)" to="(1090,860)"/>
-    <wire from="(1090,730)" to="(1130,730)"/>
-    <wire from="(1090,860)" to="(1130,860)"/>
-    <wire from="(1110,440)" to="(1110,560)"/>
-    <wire from="(1110,440)" to="(1130,440)"/>
-    <wire from="(1110,560)" to="(1110,690)"/>
-    <wire from="(1110,560)" to="(1130,560)"/>
-    <wire from="(1110,690)" to="(1110,790)"/>
-    <wire from="(1110,690)" to="(1130,690)"/>
-    <wire from="(1110,790)" to="(1110,820)"/>
-    <wire from="(1110,820)" to="(1130,820)"/>
-    <wire from="(1130,560)" to="(1140,560)"/>
-    <wire from="(1130,730)" to="(1140,730)"/>
-    <wire from="(1130,820)" to="(1140,820)"/>
-    <wire from="(1190,440)" to="(1230,440)"/>
-    <wire from="(1190,560)" to="(1220,560)"/>
-    <wire from="(1190,690)" to="(1210,690)"/>
-    <wire from="(1190,820)" to="(1230,820)"/>
-    <wire from="(120,370)" to="(150,370)"/>
-    <wire from="(1210,610)" to="(1210,690)"/>
-    <wire from="(1210,610)" to="(1250,610)"/>
-    <wire from="(1210,690)" to="(1210,740)"/>
-    <wire from="(1210,740)" to="(1250,740)"/>
-    <wire from="(1220,560)" to="(1220,600)"/>
-    <wire from="(1220,600)" to="(1220,730)"/>
-    <wire from="(1220,600)" to="(1250,600)"/>
-    <wire from="(1220,730)" to="(1250,730)"/>
-    <wire from="(1230,440)" to="(1230,590)"/>
-    <wire from="(1230,590)" to="(1230,720)"/>
-    <wire from="(1230,590)" to="(1250,590)"/>
-    <wire from="(1230,720)" to="(1250,720)"/>
-    <wire from="(1230,750)" to="(1230,820)"/>
-    <wire from="(1230,750)" to="(1240,750)"/>
-    <wire from="(1240,620)" to="(1240,750)"/>
-    <wire from="(1240,620)" to="(1250,620)"/>
-    <wire from="(1240,750)" to="(1250,750)"/>
-    <wire from="(1270,270)" to="(1270,590)"/>
-    <wire from="(1270,760)" to="(1270,800)"/>
-    <wire from="(1270,800)" to="(1320,800)"/>
-    <wire from="(1290,610)" to="(1540,610)"/>
-    <wire from="(1290,740)" to="(1550,740)"/>
-    <wire from="(130,1020)" to="(390,1020)"/>
-    <wire from="(130,290)" to="(170,290)"/>
-    <wire from="(1320,190)" to="(1320,260)"/>
-    <wire from="(1320,260)" to="(1450,260)"/>
-    <wire from="(1320,310)" to="(1320,800)"/>
-    <wire from="(1450,260)" to="(1450,270)"/>
-    <wire from="(1450,260)" to="(1560,260)"/>
-    <wire from="(150,330)" to="(150,370)"/>
-    <wire from="(150,330)" to="(170,330)"/>
-    <wire from="(150,370)" to="(150,580)"/>
-    <wire from="(150,370)" to="(410,370)"/>
-    <wire from="(150,580)" to="(690,580)"/>
-    <wire from="(1540,610)" to="(1540,720)"/>
-    <wire from="(1540,610)" to="(1650,610)"/>
-    <wire from="(1540,720)" to="(1650,720)"/>
-    <wire from="(1550,630)" to="(1550,740)"/>
-    <wire from="(1550,630)" to="(1650,630)"/>
-    <wire from="(1550,740)" to="(1650,740)"/>
-    <wire from="(1690,620)" to="(1710,620)"/>
-    <wire from="(1690,730)" to="(1710,730)"/>
-    <wire from="(170,290)" to="(180,290)"/>
-    <wire from="(1710,620)" to="(1710,670)"/>
-    <wire from="(1710,670)" to="(1750,670)"/>
-    <wire from="(1710,690)" to="(1710,730)"/>
-    <wire from="(1710,690)" to="(1750,690)"/>
-    <wire from="(1730,360)" to="(1730,720)"/>
-    <wire from="(1730,720)" to="(1760,720)"/>
-    <wire from="(1760,700)" to="(1760,720)"/>
-    <wire from="(1780,680)" to="(1820,680)"/>
-    <wire from="(1820,680)" to="(1820,1010)"/>
-    <wire from="(1820,680)" to="(1830,680)"/>
-    <wire from="(230,290)" to="(260,290)"/>
-    <wire from="(260,220)" to="(260,290)"/>
-    <wire from="(260,290)" to="(380,290)"/>
-    <wire from="(270,190)" to="(1320,190)"/>
-    <wire from="(270,190)" to="(270,960)"/>
-    <wire from="(270,960)" to="(390,960)"/>
-    <wire from="(280,1010)" to="(390,1010)"/>
-    <wire from="(290,320)" to="(300,320)"/>
-    <wire from="(300,1000)" to="(390,1000)"/>
-    <wire from="(300,320)" to="(300,360)"/>
-    <wire from="(300,360)" to="(410,360)"/>
-    <wire from="(300,800)" to="(300,1000)"/>
-    <wire from="(300,800)" to="(390,800)"/>
-    <wire from="(330,320)" to="(340,320)"/>
-    <wire from="(340,320)" to="(340,350)"/>
-    <wire from="(340,350)" to="(410,350)"/>
-    <wire from="(380,290)" to="(380,310)"/>
-    <wire from="(380,310)" to="(410,310)"/>
-    <wire from="(380,690)" to="(380,730)"/>
-    <wire from="(380,690)" to="(720,690)"/>
-    <wire from="(390,760)" to="(390,800)"/>
-    <wire from="(390,800)" to="(390,870)"/>
-    <wire from="(390,870)" to="(490,870)"/>
-    <wire from="(400,700)" to="(400,730)"/>
-    <wire from="(400,700)" to="(750,700)"/>
-    <wire from="(520,870)" to="(1030,870)"/>
-    <wire from="(60,220)" to="(260,220)"/>
-    <wire from="(60,220)" to="(60,280)"/>
-    <wire from="(60,280)" to="(90,280)"/>
-    <wire from="(630,800)" to="(630,1040)"/>
-    <wire from="(630,800)" to="(680,800)"/>
-    <wire from="(640,1010)" to="(1820,1010)"/>
-    <wire from="(640,780)" to="(640,1010)"/>
-    <wire from="(640,780)" to="(680,780)"/>
-    <wire from="(650,390)" to="(670,390)"/>
-    <wire from="(690,240)" to="(730,240)"/>
-    <wire from="(690,260)" to="(730,260)"/>
-    <wire from="(690,280)" to="(730,280)"/>
-    <wire from="(690,300)" to="(730,300)"/>
-    <wire from="(690,320)" to="(730,320)"/>
-    <wire from="(690,340)" to="(730,340)"/>
-    <wire from="(690,360)" to="(750,360)"/>
-    <wire from="(690,380)" to="(720,380)"/>
-    <wire from="(690,520)" to="(1090,520)"/>
-    <wire from="(690,520)" to="(690,580)"/>
-    <wire from="(690,600)" to="(690,710)"/>
-    <wire from="(690,600)" to="(780,600)"/>
-    <wire from="(690,710)" to="(780,710)"/>
-    <wire from="(690,810)" to="(690,840)"/>
-    <wire from="(690,840)" to="(720,840)"/>
-    <wire from="(70,300)" to="(90,300)"/>
-    <wire from="(710,790)" to="(1110,790)"/>
-    <wire from="(720,380)" to="(720,690)"/>
-    <wire from="(720,690)" to="(720,840)"/>
-    <wire from="(730,280)" to="(1430,280)"/>
-    <wire from="(730,300)" to="(1430,300)"/>
-    <wire from="(730,320)" to="(1430,320)"/>
-    <wire from="(730,340)" to="(1430,340)"/>
-    <wire from="(750,230)" to="(780,230)"/>
-    <wire from="(750,270)" to="(1270,270)"/>
-    <wire from="(750,310)" to="(1320,310)"/>
-    <wire from="(750,360)" to="(1730,360)"/>
-    <wire from="(750,360)" to="(750,700)"/>
-    <wire from="(780,230)" to="(780,600)"/>
-    <wire from="(780,680)" to="(780,710)"/>
-    <wire from="(800,640)" to="(820,640)"/>
-    <wire from="(800,650)" to="(840,650)"/>
-    <wire from="(800,660)" to="(840,660)"/>
-    <wire from="(800,670)" to="(820,670)"/>
-    <wire from="(820,470)" to="(1050,470)"/>
-    <wire from="(820,470)" to="(820,640)"/>
-    <wire from="(820,670)" to="(820,850)"/>
-    <wire from="(820,850)" to="(1050,850)"/>
-    <wire from="(840,590)" to="(1050,590)"/>
-    <wire from="(840,590)" to="(840,650)"/>
-    <wire from="(840,660)" to="(840,720)"/>
-    <wire from="(840,720)" to="(1050,720)"/>
-  </circuit>
-  <circuit name="extra">
-    <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="extra"/>
-    <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="simulationFrequency" val="0.25"/>
-    <comp lib="0" loc="(120,370)" name="Clock">
-      <a name="highDuration" val="2"/>
-      <a name="label" val="Timer"/>
-      <a name="lowDuration" val="2"/>
-    </comp>
-    <comp lib="0" loc="(130,1020)" name="Clock">
-      <a name="label" val="DataTimer"/>
-    </comp>
-    <comp lib="0" loc="(1450,270)" name="Splitter">
-      <a name="facing" val="west"/>
-      <a name="fanout" val="4"/>
-      <a name="incoming" val="4"/>
-      <a name="spacing" val="2"/>
-    </comp>
-    <comp lib="0" loc="(1560,260)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="4"/>
-    </comp>
-    <comp lib="0" loc="(1830,680)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="8"/>
-    </comp>
-    <comp lib="0" loc="(280,1010)" name="Constant"/>
-    <comp lib="0" loc="(290,320)" name="Constant"/>
-    <comp lib="0" loc="(330,320)" name="Constant">
-      <a name="value" val="0x0"/>
-    </comp>
-    <comp lib="0" loc="(400,80)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="width" val="8"/>
-    </comp>
-    <comp lib="0" loc="(670,390)" name="Splitter">
-      <a name="fanout" val="8"/>
-      <a name="incoming" val="8"/>
-      <a name="spacing" val="2"/>
-    </comp>
-    <comp lib="0" loc="(70,300)" name="Constant">
-      <a name="width" val="8"/>
-    </comp>
-    <comp lib="0" loc="(750,230)" name="Splitter">
-      <a name="facing" val="west"/>
-      <a name="spacing" val="2"/>
-    </comp>
-    <comp lib="0" loc="(750,270)" name="Splitter">
-      <a name="facing" val="west"/>
-      <a name="spacing" val="2"/>
-    </comp>
-    <comp lib="0" loc="(750,310)" name="Splitter">
-      <a name="facing" val="west"/>
-      <a name="spacing" val="2"/>
-    </comp>
-    <comp lib="1" loc="(1080,460)" name="AND Gate">
-      <a name="size" val="30"/>
-    </comp>
-    <comp lib="1" loc="(1080,580)" name="AND Gate">
-      <a name="size" val="30"/>
-    </comp>
-    <comp lib="1" loc="(1080,710)" name="AND Gate">
-      <a name="size" val="30"/>
-    </comp>
-    <comp lib="1" loc="(1080,840)" name="AND Gate">
-      <a name="size" val="30"/>
-    </comp>
-    <comp lib="1" loc="(390,760)" name="AND Gate">
-      <a name="facing" val="south"/>
-      <a name="size" val="30"/>
-    </comp>
-    <comp lib="1" loc="(520,870)" name="NOT Gate"/>
-    <comp lib="2" loc="(1290,610)" name="Multiplexer">
-      <a name="select" val="2"/>
-      <a name="selloc" val="tr"/>
-      <a name="width" val="8"/>
-    </comp>
-    <comp lib="2" loc="(1290,740)" name="Multiplexer">
-      <a name="select" val="2"/>
-      <a name="width" val="8"/>
-    </comp>
-    <comp lib="2" loc="(1780,680)" name="Multiplexer">
-      <a name="width" val="8"/>
-    </comp>
-    <comp lib="2" loc="(710,790)" name="Multiplexer">
-      <a name="width" val="8"/>
-    </comp>
-    <comp lib="2" loc="(780,680)" name="Decoder">
-      <a name="select" val="2"/>
-    </comp>
-    <comp lib="3" loc="(130,290)" name="Adder"/>
-    <comp lib="3" loc="(1690,620)" name="Adder"/>
-    <comp lib="3" loc="(1690,730)" name="Subtractor"/>
-    <comp lib="4" loc="(1130,410)" name="Register">
-      <a name="appearance" val="logisim_evolution"/>
-      <a name="label" val="X0"/>
-    </comp>
-    <comp lib="4" loc="(1130,530)" name="Register">
-      <a name="appearance" val="logisim_evolution"/>
-      <a name="label" val="X1"/>
-    </comp>
-    <comp lib="4" loc="(1130,660)" name="Register">
-      <a name="appearance" val="logisim_evolution"/>
-      <a name="label" val="X2"/>
-    </comp>
-    <comp lib="4" loc="(1130,790)" name="Register">
-      <a name="appearance" val="logisim_evolution"/>
-      <a name="label" val="X3"/>
-    </comp>
-    <comp lib="4" loc="(170,260)" name="Register">
-      <a name="appearance" val="logisim_evolution"/>
-    </comp>
-    <comp lib="4" loc="(390,950)" name="RAM">
-      <a name="addrWidth" val="4"/>
-      <a name="appearance" val="logisim_evolution"/>
-    </comp>
-    <comp lib="4" loc="(410,300)" name="RAM">
-      <a name="appearance" val="logisim_evolution"/>
-    </comp>
-    <comp lib="8" loc="(100,110)" name="Text">
-      <a name="font" val="SansSerif bold 12"/>
-      <a name="text" val="I[2:3]: ReadReg1"/>
-    </comp>
-    <comp lib="8" loc="(100,80)" name="Text">
-      <a name="font" val="SansSerif bold 12"/>
-      <a name="text" val="I[6:7]: Operation"/>
-    </comp>
-    <comp lib="8" loc="(105,135)" name="Text">
-      <a name="font" val="SansSerif bold 12"/>
-      <a name="text" val="I[0] is rightmost bit"/>
-    </comp>
-    <comp lib="8" loc="(1087,1142)" name="Text">
-      <a name="font" val="SansSerif bold 14"/>
-      <a name="text" val="Store register 3 data in memory address 5: 11010111 = d7"/>
-    </comp>
-    <comp lib="8" loc="(1088,1120)" name="Text">
-      <a name="font" val="SansSerif bold 14"/>
-      <a name="text" val="Store register 2 data in memory address 3: 11001101 = cd"/>
-    </comp>
-    <comp lib="8" loc="(1103,1078)" name="Text">
-      <a name="font" val="SansSerif bold 14"/>
-      <a name="text" val="Load 4 into register 0 from Memory Addresss 0: 10000000 = 80"/>
-    </comp>
-    <comp lib="8" loc="(1103,1099)" name="Text">
-      <a name="font" val="SansSerif bold 14"/>
-      <a name="text" val="Load 3 into register 1 from Memory Addresss 1: 10000101 = 85"/>
-    </comp>
-    <comp lib="8" loc="(1255,425)" name="Text">
-      <a name="color" val="#0000ff"/>
-      <a name="text" val="ReadReg1"/>
-    </comp>
-    <comp lib="8" loc="(130,95)" name="Text">
-      <a name="font" val="SansSerif bold 12"/>
-      <a name="text" val="I[0:1] : Desination Register"/>
-    </comp>
-    <comp lib="8" loc="(1320,825)" name="Text">
-      <a name="color" val="#0000ff"/>
-      <a name="text" val="ReadReg2"/>
-    </comp>
-    <comp lib="8" loc="(1395,595)" name="Text">
-      <a name="color" val="#0000ff"/>
-      <a name="text" val="RegData1"/>
-    </comp>
-    <comp lib="8" loc="(1395,725)" name="Text">
-      <a name="color" val="#0000ff"/>
-      <a name="text" val="RegData2"/>
-    </comp>
-    <comp lib="8" loc="(1445,230)" name="Text">
-      <a name="font" val="SansSerif bold 12"/>
-      <a name="text" val="Use if I[6] = 1"/>
-    </comp>
-    <comp lib="8" loc="(1480,315)" name="Text">
-      <a name="color" val="#0000ff"/>
-      <a name="text" val="imm4"/>
-    </comp>
-    <comp lib="8" loc="(150,50)" name="Text">
-      <a name="text" val="8 Bit Instructions (I)"/>
-    </comp>
-    <comp lib="8" loc="(1591,1108)" name="Text">
-      <a name="font" val="SansSerif bold 12"/>
-      <a name="text" val="End Program: 11111111 (ff)"/>
-    </comp>
-    <comp lib="8" loc="(1790,640)" name="Text">
-      <a name="color" val="#0000ff"/>
-      <a name="text" val="ALU"/>
-    </comp>
-    <comp lib="8" loc="(190,155)" name="Text">
-      <a name="font" val="SansSerif bold 12"/>
-      <a name="text" val="LDR/STR, I[2:5] turn into imm4 address in memory"/>
-    </comp>
-    <comp lib="8" loc="(365,135)" name="Text">
-      <a name="font" val="SansSerif bold 14"/>
-      <a name="text" val="53: 01010011 =&gt; R3 = R0 - R1"/>
-    </comp>
-    <comp lib="8" loc="(370,115)" name="Text">
-      <a name="font" val="SansSerif bold 14"/>
-      <a name="text" val="6: 00000110 =&gt; R2 = R1 + R0"/>
-    </comp>
-    <comp lib="8" loc="(520,280)" name="Text">
-      <a name="color" val="#0000ff"/>
-      <a name="text" val="Instruction Memory"/>
-    </comp>
-    <comp lib="8" loc="(550,30)" name="Text">
-      <a name="font" val="SansSerif plain 12"/>
-      <a name="text" val="Christian Apostol"/>
-    </comp>
-    <comp lib="8" loc="(570,90)" name="Text">
-      <a name="font" val="SansSerif plain 12"/>
-      <a name="text" val="CPU Name: Budget CPU"/>
-    </comp>
-    <comp lib="8" loc="(640,755)" name="Text">
-      <a name="color" val="#0000ff"/>
-      <a name="text" val="Write Back(WB)"/>
-    </comp>
-    <comp lib="8" loc="(680,175)" name="Text">
-      <a name="color" val="#0000ff"/>
-      <a name="text" val="Instruction Decoding"/>
-    </comp>
-    <comp lib="8" loc="(680,60)" name="Text">
-      <a name="font" val="SansSerif plain 12"/>
-      <a name="text" val="I pledge my honor that I have abided by the Stevens Honor System."/>
-    </comp>
-    <comp lib="8" loc="(720,1110)" name="Text">
-      <a name="color" val="#0000ff"/>
-      <a name="text" val="Memory Access (ME)"/>
-    </comp>
-    <comp lib="8" loc="(755,220)" name="Text">
-      <a name="color" val="#0000ff"/>
-      <a name="text" val="DestinationReg"/>
-    </comp>
-    <comp lib="8" loc="(810,885)" name="Text">
-      <a name="color" val="#0000ff"/>
-      <a name="text" val="RegWrite"/>
-    </comp>
-    <comp lib="8" loc="(930,40)" name="Text">
-      <a name="font" val="SansSerif plain 12"/>
-      <a name="text" val="I[6:7]"/>
-    </comp>
-    <comp lib="8" loc="(940,115)" name="Text">
-      <a name="font" val="SansSerif plain 12"/>
-      <a name="text" val="11: STR"/>
-    </comp>
-    <comp lib="8" loc="(940,95)" name="Text">
-      <a name="font" val="SansSerif plain 12"/>
-      <a name="text" val="10: LDR"/>
-    </comp>
-    <comp lib="8" loc="(95,125)" name="Text">
-      <a name="font" val="SansSerif bold 12"/>
-      <a name="text" val="I[4:5] ReadReg2"/>
-    </comp>
-    <comp lib="8" loc="(950,60)" name="Text">
-      <a name="font" val="SansSerif plain 12"/>
-      <a name="text" val="00: Addition"/>
-    </comp>
-    <comp lib="8" loc="(960,80)" name="Text">
-      <a name="font" val="SansSerif plain 12"/>
-      <a name="text" val="01: Subtraction"/>
     </comp>
     <wire from="(1030,450)" to="(1030,570)"/>
     <wire from="(1030,450)" to="(1050,450)"/>
