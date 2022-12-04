@@ -1,5 +1,5 @@
 def read_assembly():
-    """Reads each line as an individual instruction from assembly.txt and returns them in an array"""
+    """Reads each line as an individual instruction from assembly.txt and divides them into instruction and memory"""
     with open('assembly.txt') as f:
         assembly = [line.rstrip() for line in f] # Strip '\n' from each line
 
@@ -19,9 +19,6 @@ def read_assembly():
     for i, da in enumerate(data):
         data[i] = compile_data(da)
         data_assignment[data[i][0]] = data[i][1]
-    
-    print(instructions)
-    print(data_assignment)
 
     # index 0 holds all the assembly instructions, index 1 holds all the data assignments
     return [instructions, data_assignment]
@@ -73,9 +70,44 @@ def compile_data(d):
     return(memory_add, value)
 
 def create_ins_img(instructions):
-    """Takes an array of instructions and outputs image file (one for instruction_mem and one for data_mem)"""
-    f = open("test_i.txt", "w")
+    """Takes an array of instructions and outputs image file for instruction_mem"""
+    output = {
+        0: ['00'] * 16,
+        16: ['00'] * 16,
+        32: ['00'] * 16,
+        48: ['00'] * 16,
+        64: ['00'] * 16,
+        80: ['00'] * 16,
+        96: ['00'] * 16,
+        112: ['00'] * 16,
+        128: ['00'] * 16,
+        144: ['00'] * 16,
+        160: ['00'] * 16,
+        176: ['00'] * 16,
+        192: ['00'] * 16,
+        208: ['00'] * 16,
+        224: ['00'] * 16,
+        240: ['00'] * 16,
+    }
+    count = 0
+    cur = 0
+
+    for i in instructions:
+        if count == 16:
+            count = 0
+            cur += 16
+        output[cur][count] = i
+        count += 1
+
+    f = open("instruction_mem.txt", "w")
     f.write("v3.0 hex words addressed\n")
+
+    for key in output:
+        f.write(format(key, '02x'))
+        f.write(": ")
+        for inst in output[key]:
+            f.write(inst + " ")
+        f.write("\n")
     f.close()
 
 def create_data_img(data):
@@ -92,9 +124,3 @@ if __name__ == "__main__":
     program = read_assembly()
     create_ins_img(program[0])
     create_data_img(program[1])
-
-    compile_ins('ADD R2 R1 R0')
-    compile_ins('SUB R3 R0 R1')
-
-    compile_data('M0: 4')
-    compile_data('M12: 3')
