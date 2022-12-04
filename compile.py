@@ -1,3 +1,8 @@
+# Authors: Marcus San Antonio, Christian Apostol
+# Pledge: I pledge my honor that I have abided by the Stevens Honor System.
+# CPU Name: Budget CPU
+# Python Program that compiles assembly code into image files to be used in budget_cpu.circ
+
 def read_assembly():
     """Reads each line as an individual instruction from assembly.txt and divides them into instruction and memory"""
     with open('assembly.txt') as f:
@@ -43,7 +48,7 @@ def compile_ins(i):
 
     # Arithmetic decoding
     elif (i[0:3].lower() == "add" or i[0:3].lower() == "sub"):
-        if (i[0:3].lower() == "add"):
+        if (i[0:3].lower() == "add"): 
             binary_str += "00"
         elif(i[0:3].lower() == "sub"):
             binary_str += "01"
@@ -57,10 +62,10 @@ def compile_ins(i):
         # Decode Destination Register
         binary_str += format(int(i[5]), '02b')
 
-    return format(int(binary_str, 2), '02x') # Convert binary to hexadecimal
+    return format(int(binary_str, 2), '02x') # Convert binary instruction to hexadecimal
 
 def compile_data(d):
-    """Converts assembly data assignment into tuple pairs (memory index, data value in hex)"""
+    """Converts assembly data assignment into a tuple : (memory index, data value in hexadecimal)"""
     if len(d) == 5:
         memory_add = int(d[1])
         value = format(int(d[4]), '02x')
@@ -71,6 +76,7 @@ def compile_data(d):
 
 def create_ins_img(instructions):
     """Takes an array of instructions and outputs image file for instruction_mem"""
+    # Use dictionary with keys that are multiples of 16 - each represent a row in instruction_mem.txt
     output = {
         0: ['00'] * 16,
         16: ['00'] * 16,
@@ -89,21 +95,24 @@ def create_ins_img(instructions):
         224: ['00'] * 16,
         240: ['00'] * 16,
     }
-    count = 0
-    cur = 0
 
+    count = 0 # Keeps track of index on current key
+    cur_key = 0
+
+    # Add instructions to the output dictionary
     for i in instructions:
-        if count == 16:
+        if count == 16: # Move to next key
             count = 0
-            cur += 16
-        output[cur][count] = i
+            cur_key += 16 # Increment key value by 16
+        output[cur_key][count] = i
         count += 1
 
     f = open("instruction_mem.txt", "w")
     f.write("v3.0 hex words addressed\n")
 
+    # Iterate over each key and output its corresponding instruction list
     for key in output:
-        f.write(format(key, '02x'))
+        f.write(format(key, '02x')) # Convert decimal key to hexadecimal string
         f.write(": ")
         for inst in output[key]:
             f.write(inst + " ")
@@ -115,12 +124,13 @@ def create_data_img(data):
     f = open("data_mem.txt", "w")
     f.write("v3.0 hex words addressed\n")
     f.write("0: ")
+    # Iterate over data values and output them to txt file
     for d in data:
         f.write(d + " ")
     f.write("\n")
     f.close()
 
 if __name__ == "__main__":
-    program = read_assembly()
-    create_ins_img(program[0])
-    create_data_img(program[1])
+    program = read_assembly() # Divide assembly into instruction and data segments
+    create_ins_img(program[0]) # Output/Overwrite instruction_mem.txt
+    create_data_img(program[1]) # Output/Overwrite data_men.txt
